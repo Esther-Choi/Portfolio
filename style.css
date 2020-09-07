@@ -17,6 +17,21 @@ body {
   margin: 0px;
 }
 
+.language {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  color: var(--font-color);
+}
+
+.language:hover {
+  color: var(--pink-color);
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -646,7 +661,7 @@ h2 {
   }
 
   .aboutme {
-    height: 2350px;
+    height: 2400px;
   }
 }
 
@@ -656,14 +671,18 @@ h2 {
   }
   .aboutme {
     margin: 0px 15px;
-    height: 2300px;
+    height: 2350px;
   }
 }
 
 @media screen and (max-width: 730px) {
-  .menu a {
+  .menu ul li a {
     font-size: 25px;
   }
+  .language {
+    font-size: 15px;
+  }
+
   .aboutme .introduce_content {
     font-size: 22px;
     line-height: 32px;
